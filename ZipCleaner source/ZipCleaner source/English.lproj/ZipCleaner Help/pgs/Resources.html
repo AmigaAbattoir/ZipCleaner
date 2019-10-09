@@ -1,0 +1,39 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<title>Resource information</title>
+		<meta name="keywords" content="ZipCleaner">
+		<meta name="description" content="This page describes the function of resource forks.">
+		<link href="../sty/help.css" rel="stylesheet" media="all">
+	</head>
+
+	<body>
+		<div id="banner">
+			<div id="bookid">
+				<a class="bread" href="../ZipCleaner%20Help.html">ZipCleaner Help</a></div>
+		</div>
+		<div id="mainbox">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr valign="bottom">
+					<td width="32"><img src="../gfx/ZipCleaner32.png" alt="Icon" height="32" width="32"></td>
+					<td width="8"></td>
+					<td valign="bottom">
+						<h2>Resource information</h2>
+					</td>
+				</tr>
+				<tr valign="middle" height="12">
+					<td width="32" height="12"></td>
+					<td width="8" height="12"></td>
+					<td valign="bottom" height="12"></td>
+				</tr>
+			</table>
+			<p>When you remove all resource information from an archive with ZipCleaner, this includes resource forks, as well as any <a href="DS_Store.html">.DS_Store files</a> and custom icons for files and folders.</p>
+			<p>Traditionally, files on the Mac have had a different structure from those of other operating systems. Instead of treating a file simply as a named, ordered sequence of bytes, each Macintosh file has two separate sections or forks. One is known as the data fork and the other as the resource fork. <br>
+					A file's resource fork contains the resources belonging to that file. If the file is an application, things like the menus, dialog boxes, icons, sounds, and information about the necessary memory for the program to run would be put there. Before the PowerPC architecture, the code to run the application also would always be stored in the resource fork. Document files, on the other hand, would seldom have information in their resource forks, but some programs would put things like the file's preference settings and window location in there. A file's data fork contains the data belonging to that file. It is the equivalent of what a file would be on another operating system.</p>
+			<p>As Mac OS was the only operating system that used resource forks, moving files to another OS would result in them losing their, sometimes essential, resource information. When OS X was introduced, Apple decided to move away from resource forks. Nowadays, only some files still use them. OS X still supports resource forks, though, e.g. saving them inside the zip archives the Finder creates. When you open such an archive on another OS, it will contain a folder named <code>__MACOSX</code> where the resource information of the uncompressed file(s) is stored.</p>
+			<p>By default, you can remove all resource information by simply dropping the archive on ZipCleaner. As removing resource forks can make files, (mostly older applications, but also some AppleScripts), unusable, ZipCleaner will warn you. You can tell it not do so, by changing the preferences.</p>
+		</div>
+	</body>
+
+</html>

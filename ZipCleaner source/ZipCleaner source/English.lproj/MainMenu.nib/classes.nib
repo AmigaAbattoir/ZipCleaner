@@ -1,0 +1,39 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {open = id; prefChanged = id; prefRestore = id; stopCleaning = id; }; 
+            CLASS = Controller; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                detailsTextView = NSTextView; 
+                detailsWindow = NSWindow; 
+                dropInfoText = NSTextField; 
+                dropWindow = NSWindow; 
+                fileNameProgressIndicator = NSTextField; 
+                openPanelAccessoryView = NSView; 
+                "prefKeyDS_Store" = NSPopUpButton; 
+                prefReportSuccess = NSButton; 
+                "prefWarnDS_Store" = NSButton; 
+                prefWarnResourceFiles = NSButton; 
+                progressIndicator = NSProgressIndicator; 
+                progressIndicatorText = NSTextField; 
+                windowProgressIndicator = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {showWindow = id; }; 
+            CLASS = DropView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                controller = Controller; 
+                dropIconButton = NSButton; 
+                dropInfoText = NSTextField; 
+            }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = NSMutableArray; LANGUAGE = ObjC; SUPERCLASS = NSArray; }
+    ); 
+    IBVersion = 1; 
+}
